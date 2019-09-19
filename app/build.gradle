@@ -37,7 +37,7 @@ android {
          * flavor dimension 它的维度就是该版本号
          */
         flavorDimensions "" + versionCode + ""
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         resConfigs "en"
     }
@@ -183,13 +183,13 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 
-    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintlayoutVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
 
     /**
      FIX_ERROR:Conflict with dependency 'com.google.code.findbugs:jsr305' in project ':dragger'.
@@ -201,19 +201,19 @@ dependencies {
      androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {exclude group: 'com.google.code.findbugs'，module: 'jsr305'
      exclude group: 'com.google.code.findbugs'，module: 'jsr305'})
      */
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // Android Library
     implementation project(':calculator')
     implementation project(':calculator2')
 
     // File -> New -> New Module
-    implementation project(':calculator2aar')
+//    implementation project(':calculator2aar')
 
     // Use .jar by putting local maven repository
-    implementation "com.example.hades:calculator2:1.0.0@aar"
+//    implementation "com.example.hades:calculator2:1.0.0@aar"
 
     // Jar Library
     implementation project(':calculator3')
-    implementation "com.example.hades:calculator3:1.0.0"
+//    implementation "com.example.hades:calculator3:1.0.0"
 }

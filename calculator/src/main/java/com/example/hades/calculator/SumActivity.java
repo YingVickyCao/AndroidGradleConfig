@@ -2,7 +2,8 @@ package com.example.hades.calculator;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 public class SumActivity extends Activity {
     @Override
