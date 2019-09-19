@@ -1,0 +1,2 @@
+# AndroidGradleConfig
+Config about gradle
