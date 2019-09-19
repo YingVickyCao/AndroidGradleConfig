@@ -205,15 +205,15 @@ dependencies {
 
     // Android Library
     implementation project(':calculator')
-    implementation project(':calculator2')
+    implementation project(':calculator2') // calculator2 style1:
 
     // File -> New -> New Module
-//    implementation project(':calculator2aar')
+//    implementation project(':calculator2aar') // calculator2 style2:
 
     // Use .jar by putting local maven repository
-//    implementation "com.example.hades:calculator2:1.0.0@aar"
+//    implementation "com.example.hades:calculator2:1.0.0@aar"  // calculator2 style3:
 
     // Jar Library
-    implementation project(':calculator3')
-//    implementation "com.example.hades:calculator3:1.0.0"
+    implementation project(':calculator3')  // calculator3 style1
+//    implementation "com.example.hades:calculator3:1.0.0" // calculator3 style2
 }
