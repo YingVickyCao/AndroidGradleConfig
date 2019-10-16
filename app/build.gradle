@@ -122,14 +122,20 @@ android {
     /**
      * Combine multiple product flavors
      */
-    /**
-     productFlavors {baidu {// Change the application ID for build variants => BuildConfig
-     applicationIdSuffix ".baidu"
-     versionNameSuffix "_baidu"}google {// Change the application ID for build variants => BuildConfig
-     applicationIdSuffix ".google"
-     versionNameSuffix "_google"
-     // release apk
-     signingConfig signingConfigs.google_release_key}}**/
+
+    productFlavors {
+        baidu {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".baidu"
+            versionNameSuffix "_baidu"
+        }
+
+        google {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".google"
+            versionNameSuffix "_google"
+            // release apk
+            signingConfig signingConfigs.google_release_key
+        }
+    }
     /**
      * Enable Java8
      */
