@@ -124,21 +124,25 @@ android {
      */
 
     productFlavors {
-        baidu {// Change the application ID for build variants => BuildConfig
-            applicationIdSuffix ".baidu"
-            versionNameSuffix "_baidu"
+        blue {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".blue"
+            versionNameSuffix "_blue"
         }
 
-        google {// Change the application ID for build variants => BuildConfig
-            applicationIdSuffix ".google"
-            versionNameSuffix "_google"
+        red {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".red"
+            versionNameSuffix "_red"
             // release apk
             signingConfig signingConfigs.google_release_key
         }
+
+        yellow {
+            applicationIdSuffix ".yellow"
+            versionNameSuffix "_yellow"
+        }
     }
-    /**
-     * Enable Java8
-     */
+
+    // Enable Java8
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -173,8 +177,11 @@ android {
     sourceSets {
         test {
             // default = src/test/java
+//            logger.error(java.srcDirs.toString())
             java.srcDirs += ['src/test2/java']
+//            logger.error(java.srcDirs.toString())
         }
+
 
         androidTest {
             // default = src/androidTest/java
