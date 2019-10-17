@@ -17,9 +17,39 @@ buildscript {
     ext.kotlin_version = '1.3.41' // Support Kotlin
 
     repositories {
+
+        // http://ju.outofmemory.cn/entry/336023
+        // maven私服的认证,way1
+        /*
+        maven {
+            credentials {
+                username 'user'
+                password 'password'
+            }
+            url "http://repo.mycompany.com/maven2"
+        }
+        */
+
+        // 带认证的库,way2
+        /*
+            ~/.gradle/gradle.properties
+            mavenUser=username
+            mavenPass=password
+        */
+        /*
+        maven {
+            credentials {
+                username "$mavenUser"
+                password "$mavenPass"
+            }
+            url 'http://repo.mycompany.com/maven2'
+        }
+        */
+
         google()
         jcenter()
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Support Kotlin
