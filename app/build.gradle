@@ -6,6 +6,11 @@ apply plugin: 'kotlin-android-extensions'
 int MILLIS_IN_MINUTE = 1000 * 60
 int minutesSinceEpoch = System.currentTimeMillis() / MILLIS_IN_MINUTE
 
+// /Users/account/Documents/Gitee/AndroidGradleConfig/app
+//logger.error("${project.projectDir}")
+// /Users/account/Documents/Gitee/AndroidGradleConfig
+//logger.error("${rootProject.projectDir.path}")
+
 android {
     signingConfigs {
 
