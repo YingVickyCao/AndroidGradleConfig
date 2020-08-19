@@ -185,6 +185,8 @@ android {
 //            logger.error(java.srcDirs.toString())
             java.srcDirs += ['src/test2/java']
 //            logger.error(java.srcDirs.toString())
+
+            resources.srcDirs += ['src/test2/resources']
         }
 
 
@@ -195,6 +197,7 @@ android {
 
         main {
             res.srcDirs += ['src/main/res-android']
+            resources.srcDirs += ['src/main2/resources']
         }
     }
 }
