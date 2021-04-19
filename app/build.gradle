@@ -129,21 +129,16 @@ android {
      */
 
     productFlavors {
-        blue {// Change the application ID for build variants => BuildConfig
-            applicationIdSuffix ".blue"
-            versionNameSuffix "_blue"
+        uat {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".uat"
+            versionNameSuffix "_uat"
         }
 
-        red {// Change the application ID for build variants => BuildConfig
-            applicationIdSuffix ".red"
-            versionNameSuffix "_red"
+        proc {// Change the application ID for build variants => BuildConfig
+            applicationIdSuffix ".proc"
+            versionNameSuffix "_proc"
             // release apk
             signingConfig signingConfigs.google_release_key
-        }
-
-        yellow {
-            applicationIdSuffix ".yellow"
-            versionNameSuffix "_yellow"
         }
     }
 
