@@ -24,6 +24,8 @@ android {
         release_key {
             keyAlias 'release_key'
             keyPassword '123456'
+            // /users/username/.android/release_key.jks
+            //storeFile file('$HOME/.android/release_key.jks')
             storeFile file('/Users/hades/Documents/GitHub/Tools/source/AndroidGradleConfigCode/key/release_key.jks')
             storePassword '123456'
         }
