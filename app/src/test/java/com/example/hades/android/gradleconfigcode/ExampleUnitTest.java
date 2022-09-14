@@ -34,6 +34,7 @@ public class ExampleUnitTest {
 //        String rootPath4 = getClass().getResource("").toString();
 //        System.out.println(rootPath4);
 
+        // Unit Test 如何获得resources的文件？
 //        InputStream inputStream = getClass().getResourceAsStream("a.txt");
     }
 }
