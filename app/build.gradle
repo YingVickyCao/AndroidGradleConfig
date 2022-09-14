@@ -182,9 +182,13 @@ android {
 //            logger.error(java.srcDirs.toString())
             java.srcDirs += ['src/test2/java']
 //            logger.error(java.srcDirs.toString())
-
             resources.srcDirs += ['src/test2/resources']
         }
+
+        // /Users/account/Documents/project/AndroidGradleConfig
+        println("print project dir:"+rootProject.projectDir.path)
+        // [/Users/account/Documents/project/AndroidGradleConfig/app/src/test/resources, /Users/account/Documents/project/AndroidGradleConfig/app/src/test2/resources]
+        println("print project dir:"+test.resources.srcDirs)
 
 
         androidTest {
