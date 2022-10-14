@@ -1,5 +1,5 @@
 rootProject.name = 'JavaProject'
-include 'A'
-include 'B'
-include 'C'
+include 'library-a'
+include 'library-b'
+include 'library-c'
 
