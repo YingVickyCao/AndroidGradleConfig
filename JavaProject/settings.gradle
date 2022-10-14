@@ -1,0 +1,5 @@
+rootProject.name = 'JavaProject'
+include 'InternalLibrary'
+include 'A'
+include 'test'
+
