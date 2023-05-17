@@ -45,9 +45,14 @@ buildscript {
             url 'http://repo.mycompany.com/maven2'
         }
         */
-
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        mavenCentral()
         google()
-        jcenter()
     }
 
     dependencies {
@@ -58,8 +63,12 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        mavenLocal()
         google()
-        jcenter()
+        mavenCentral()
         // Use .jar by putting local maven repository
         maven { url = "$rootProject.projectDir/calculator-sdk" }
     }
