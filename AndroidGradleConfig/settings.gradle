@@ -1,2 +1,6 @@
 // Use caculator2 to build AAR
 include ':app', ':calculator', ':calculator2aar', ':calculator3', ':calculator2'
+
+// 自定义 module 的位置
+// include ':data-binding-example' // application
+// project(':data-binding-example').projectDir = new File('lib-examples/data-binding-example')
